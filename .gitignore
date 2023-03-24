@@ -1,3 +1,7 @@
+# Custom ignores
+data/*.txt
+build
+
 # Logs
 logs
 *.log

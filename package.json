@@ -1,0 +1,34 @@
+{
+  "name": "gtfs-node",
+  "version": "0.0.1",
+  "description": "GTFS node server",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build-watch": "tsc --watch -p tsconfig.json",
+    "dev": "npm run build-watch & nodemon ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcfd/gtfs-node.git"
+  },
+  "keywords": [
+    "gtfs"
+  ],
+  "author": "Luca Fedrizzi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lcfd/gtfs-node/issues"
+  },
+  "homepage": "https://github.com/lcfd/gtfs-node#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.6",
+    "fastify": "^4.15.0",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.7",
+    "fastify-cli": "^5.7.1",
+    "typescript": "^5.0.2"
+  }
+}
