@@ -47,6 +47,10 @@ export const file_route = async (
             return r.shape_id === id;
           } else if (filename === "stop_times") {
             return r.trip_id === id;
+          } else if (filename === "stops") {
+            return r.stop_id === id;
+          } else if (filename === "agency") {
+            return r.agency_id === id;
           }
           return true;
         });
