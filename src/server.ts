@@ -1,7 +1,5 @@
 import Fastify, { FastifyInstance, RouteShorthandOptions } from "fastify";
-import { agency_route } from "./routes/agency";
 import { file_route } from "./routes/file_route";
-import { stops_route } from "./routes/stops";
 
 export const APP_ROOT = process.env.PWD || __dirname;
 
@@ -24,9 +22,8 @@ const opts: RouteShorthandOptions = {
   },
 };
 
+server.get("/gtfs/:filename/:id", file_route);
 server.get("/gtfs/:filename", file_route);
-// server.get("/gtfs/agency", agency_route);
-// server.get("/gtfs/stops", stops_route);
 
 const start = async () => {
   try {

@@ -1,0 +1,18 @@
+export type TFileNames =
+  | "agency"
+  | "stops"
+  | "routes"
+  | "trips"
+  | "stop_times"
+  | "calendardates"
+  | "calendar_datescalendar_dates"
+  | "fare_attributes"
+  | "fare_rules"
+  | "shapes"
+  | "frequencies"
+  | "transfers"
+  | "pathways"
+  | "levels"
+  | "feed_info"
+  | "translations"
+  | "attributions";
