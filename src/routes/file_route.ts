@@ -4,6 +4,7 @@ import { finished } from "stream/promises";
 import { readFile } from "../readFile";
 import { emptyAgency, TAgency } from "../types/agency";
 import { emptyCalendar } from "../types/calendar";
+import { emptyCalendarDates } from "../types/calendar_dates";
 import { TFileNames } from "../types/generic";
 import { emptyRoute } from "../types/routes";
 import { emptyShape } from "../types/shapes";
@@ -86,6 +87,9 @@ export const file_route = async (
       break;
     case "calendar":
       empty_object = emptyCalendar;
+      break;
+    case "calendar":
+      empty_object = emptyCalendarDates;
       break;
     default:
       return resultData;
